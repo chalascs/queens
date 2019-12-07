@@ -99,7 +99,7 @@ public class login extends javax.swing.JFrame {
         );
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 250, 240));
+        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 350, 230));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/loginback.png"))); // NOI18N
         jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 350));
@@ -181,14 +181,14 @@ public class login extends javax.swing.JFrame {
     public void resizeImageFit() {
         BufferedImage img = null;
         try {
-            img = ImageIO.read(new File("C:\\Users\\Queens Colombo\\Documents\\NetBeansProjects\\queens\\src\\img\\logoQ"));
+            img = ImageIO.read(new File("C:\\Users\\Queens Colombo\\Documents\\NetBeansProjects\\queens\\src\\img\\logoQ.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
         Image dimg = img.getScaledInstance(jLabel4.getWidth(), jLabel4.getHeight(),
         Image.SCALE_SMOOTH);
         ImageIcon imageIcon = new ImageIcon(dimg);
-        //jLabel4.setIcon(imageIcon);
+        jLabel4.setIcon(imageIcon);
     }
 
 }
